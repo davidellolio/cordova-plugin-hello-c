@@ -44,23 +44,23 @@
 
     <!-- DEBUG - these files are not needed for production -->
     <!-- Custom gradle file to setup NDK for debugging -->
-    <source-file src="src/android/build-extras.gradle" target-dir="."/>
+    <!-- <source-file src="src/android/build-extras.gradle" target-dir="."/> -->
 
     <!-- NDK Make file for source references for C debugging -->
-    <source-file src="src/android/jni/Android.mk" target-dir="app/src/main/java/c/android/jni/"/>
+    <!-- <source-file src="src/android/jni/Android.mk" target-dir="app/src/main/java/c/android/jni/"/> -->
 
     <!-- C source files -->
-    <source-file src="src/android/jni/HelloCJni.c" target-dir="app/src/main/java/c/android/jni/"/>
+    <!-- <source-file src="src/android/jni/HelloCJni.c" target-dir="app/src/main/java/c/android/jni/"/> -->
 
-    <source-file src="src/common/hello.h" target-dir="app/src/main/java/c/common/"/>
-    <source-file src="src/common/hello.c" target-dir="app/src/main/java/c/common/"/>
+    <!-- <source-file src="src/common/hello.h" target-dir="app/src/main/java/c/common/"/> -->
+    <!-- <source-file src="src/common/hello.c" target-dir="app/src/main/java/c/common/"/> -->
 
-    <source-file src="src/common/mylib/mylib.h" target-dir="app/src/main/java/c/common/mylib"/>
-    <source-file src="src/common/mylib/mylib.c" target-dir="app/src/main/java/c/common/mylib"/>
-    <source-file src="src/common/mylib/mycomponent.h" target-dir="app/src/main/java/c/common/mylib"/>
-    <source-file src="src/common/mylib/mycomponent.c" target-dir="app/src/main/java/c/common/mylib"/>
-    <source-file src="src/common/mylib/parts/mypart.h" target-dir="app/src/main/java/c/common/mylib/parts"/>
-    <source-file src="src/common/mylib/parts/mypart.c" target-dir="app/src/main/java/c/common/mylib/parts"/>
+    <!-- <source-file src="src/common/mylib/mylib.h" target-dir="app/src/main/java/c/common/mylib"/> -->
+    <!-- <source-file src="src/common/mylib/mylib.c" target-dir="app/src/main/java/c/common/mylib"/> -->
+    <!-- <source-file src="src/common/mylib/mycomponent.h" target-dir="app/src/main/java/c/common/mylib"/> -->
+    <!-- <source-file src="src/common/mylib/mycomponent.c" target-dir="app/src/main/java/c/common/mylib"/> -->
+    <!-- <source-file src="src/common/mylib/parts/mypart.h" target-dir="app/src/main/java/c/common/mylib/parts"/> -->
+    <!-- <source-file src="src/common/mylib/parts/mypart.c" target-dir="app/src/main/java/c/common/mylib/parts"/> -->
     <!-- END DEBUG -->
 
   </platform>
@@ -78,19 +78,19 @@
     <source-file src="src/ios/HelloCPlugin.m" target-dir="HelloCPlugin"/>
 
     <!-- C source files -->
-    <header-file src="src/ios/c_getArch.h" target-dir="HelloCPlugin"/>
-    <source-file src="src/ios/c_getArch.c" target-dir="HelloCPlugin"/>
+    <!-- <header-file src="src/ios/c_getArch.h" target-dir="HelloCPlugin"/> -->
+    <!-- <source-file src="src/ios/c_getArch.c" target-dir="HelloCPlugin"/> -->
 
     <header-file src="src/common/hello.h" target-dir="HelloCPlugin"/>
     <source-file src="src/common/hello.c" target-dir="HelloCPlugin"/>
 
     <!-- PRODUCTION - comment out source files below for debugging -->
     <!-- Compiled C libraries -->
-    <source-file src="src/ios/libs/libmylib.a" framework="true" />
+    <!-- <source-file src="src/ios/libs/libmylib.a" framework="true" /> -->
     <!-- C header files -->
-    <header-file src="src/ios/libs/headers/mylib.h" target-dir="HelloCPlugin"/>
-    <header-file src="src/ios/libs/headers/mycomponent.h" target-dir="HelloCPlugin"/>
-    <header-file src="src/ios/libs/headers/mypart.h" target-dir="HelloCPlugin"/>
+    <!-- <header-file src="src/ios/libs/headers/mylib.h" target-dir="HelloCPlugin"/> -->
+    <!-- <header-file src="src/ios/libs/headers/mycomponent.h" target-dir="HelloCPlugin"/> -->
+    <!-- <header-file src="src/ios/libs/headers/mypart.h" target-dir="HelloCPlugin"/> -->
     <!-- END PRODUCTION -->
 
     <!-- DEBUG - these files are not needed for production - comment in for debugging -->
