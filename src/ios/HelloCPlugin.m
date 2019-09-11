@@ -6,7 +6,7 @@
 {
     //c_hello();
 
-    NSString* output = getKey();
+    NSString* output = [NSString stringWithFormat: @"%s", getKey()];
     
     CDVPluginResult* result = [CDVPluginResult
                                resultWithStatus:CDVCommandStatus_OK
