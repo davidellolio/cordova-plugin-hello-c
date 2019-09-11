@@ -17,24 +17,12 @@ public class HelloCPlugin extends CordovaPlugin {
         context = callbackContext;
         boolean result = true;
         try {
-            if (action.equals("hello")) {
+            if (action.equals("getKey")) {
 
-                String input = data.getString(0);
-                String jniOutput = HelloCJni.hello(input);
-                String output = "Android says: " + jniOutput;
+                String output = HelloCJni.getKey();
                 callbackContext.success(output);
 
-            } else if (action.equals("getArch")) {
-                String jniOutput = HelloCJni.getArch();
-                String output = "Android " + jniOutput;
-                callbackContext.success(output);
-
-            } else if (action.equals("calculate")) {
-                int x = data.getInt(0);
-                int y = data.getInt(1);
-                int jniOutput = HelloCJni.calculate(x,y);
-                callbackContext.success(jniOutput);
-            }
+            } 
             else {
                 handleError("Invalid action");
                 result = false;
